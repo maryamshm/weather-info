@@ -1,0 +1,203 @@
+/* anim */
+.temp{
+    opacity:0;
+    animation:temp 1s ease;
+    margin-top:-50px;
+    animation-fill-mode:forwards;
+}
+@keyframes temp{
+	to{opacity:1;margin-top:0px;}
+}
+.svg_location{
+    opacity:0;
+    animation:svg_loc 3s ease;
+    bottom:-80px;
+    animation-fill-mode:forwards;
+    position:relative;
+}
+
+@keyframes svg_loc{
+	to{opacity:1;bottom:0px;}
+}
+
+#input_city,#btn_location{
+    opacity:0;
+    animation:temp 3s ease;
+    margin-top:-50px;
+    animation-fill-mode:forwards;
+}
+
+.row{
+    opacity:0;
+    animation:svg_loc 3.5s ease;
+    bottom:-80px;
+    animation-fill-mode:forwards;
+    position:relative;
+}
+
+/* respon */
+
+@media only screen and (max-width: 1266px) {
+    body{
+        background:white;
+    }
+
+    #container {
+        border-radius:0px;
+        height: 100%;
+        width: 100%;
+
+    }
+    main{
+        display:block;
+        width:100%;
+        height:100%;
+
+    }
+    #con_botton{
+        flex-direction:column;
+    }
+    #con_botton{
+        flex-direction:column;
+        height:auto;
+    }
+    #botton_left{
+        width:100%;
+    }
+    #input_con{margin-bottom:5%;}
+    .svg_location{
+        width:50%;
+        height:50%;
+        margin-left:25%;
+        margin-bottom:5%;
+    }
+    #botton_right {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 39% 39%;
+        grid-column-gap: 7%;
+        grid-row-gap: 7%
+    }
+    .row_day {
+        font-size:1rem;
+        }
+        #top {
+        margin-bottom:8%;
+        }
+        #top_con{
+            width:100%;
+            height:100%;
+            border-radius:0px;
+        }
+        #text_city{
+            font-size:2rem;
+            margin-top:5%;
+        }
+        #togel {
+        width:30px;
+        height:30px;
+        }
+        #switch{
+            width:60px;
+            height:30px;
+        }
+        .temp{
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            height: 110px;
+            left: 25%;
+            border-radius:5px;
+            top: 65%;
+        }
+        #icon_top {
+        height:100%;
+        }
+        #icon_top img{
+            width:50%;
+        }
+    
+}
+
+@media only screen and (min-width: 0px) and (max-width: 427px){
+    body{
+        background:white;
+    }
+
+    #container {
+        border-radius:0px;
+        height: 100%;
+        width: 100%;
+
+    }
+    main{
+        display:block;
+        width:100%;
+        height:100%;
+
+    }
+    #con_botton{
+        flex-direction:column;
+    }
+    #con_botton{
+        flex-direction:column;
+        height:auto;
+    }
+    #botton_left{
+        width:100%;
+    }
+    #input_con{margin-bottom:5%;}
+    .svg_location{
+        width:50%;
+        height:50%;
+        margin-left:25%;
+        margin-bottom:5%;
+    }
+    #botton_right {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns:80%;
+        grid-column-gap: 7%;
+        grid-row-gap: 2%
+    }
+    .row_day {
+    font-size:1rem;
+    }
+    #top {
+    margin-bottom:8%;
+    }
+    #top_con{
+        width:100%;
+        height:100%;
+        border-radius:0px;
+    }
+    #text_city{
+        font-size:1.5rem;
+        margin-top:7%;
+    }
+    #togel {
+    width:30px;
+    height:30px;
+    }
+    #switch{
+        width:60px;
+        height:30px;
+    }
+    .temp{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        height: 80px;
+        left: 25%;
+        border-radius:5px;
+        top: 75%;
+    }
+    #icon_top {
+    height:100%;
+    }
+    #icon_top img{
+        width:70%;
+    }
+}
